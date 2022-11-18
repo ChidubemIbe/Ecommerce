@@ -1,0 +1,251 @@
+body{
+    background-color: orange;
+    margin: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: orange;
+}
+nav{
+    width: 80%;
+    position: sticky;
+   margin: 20px auto;
+   z-index: 1;
+    display: flex;
+    text-align: center;
+}
+.logo{
+    flex-basis: 20%;
+}
+.logo img{
+    width: 150px;
+    
+}
+.logo p{
+    font-family: cursive;
+    color: rgb(153, 0, 255);
+}
+.link{
+    position: absolute;
+    top: 10px;
+    left: 720px;
+}
+.link ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 12px;   
+}
+.link ul li a:hover{
+    color: white;
+}
+
+.link ul li a{
+    text-decoration: none;
+    color: rgb(153, 0, 255);
+}
+.information{
+    width: 1000px;
+    height: 1200px;
+    position: absolute;
+    left: 35.5%; 
+    top: -15%;
+    transform:translate(-50%);
+}
+#circle{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+.fea img{
+    width: 100px;
+}
+.fea{
+    position: absolute;
+    display: flex;
+    color: white;
+}
+.fea div{
+    margin-left: 30px;
+}
+.fea div p{
+    margin-top: 8px;
+}
+.one{
+    top: 450px;
+    right: 50px;
+}
+.two{
+    top: 100px;
+   right: 300px;
+   transform: rotate(-90deg);
+}
+.three{
+    top: 450px;
+    left: 50px;   
+    transform: rotate(-180deg); 
+}
+button {
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  
+  button:hover {
+    background-color: rgb(158, 0, 255);
+    color: white;
+    cursor: pointer;
+  }
+.mobile{
+    width: 250px;
+    position: absolute;
+    top: 32%;
+    left: 24% ;
+    z-index: 2;
+}
+.controls{
+    position: absolute;
+    top: 40%;
+    right: 10%;
+}
+.controls h2{
+color: rgb(153, 0, 255);
+}
+
+#up{
+    width: 15px;
+    cursor: pointer;
+    margin-bottom:30px ;
+}
+#down{
+    width: 15px;
+    cursor: pointer;
+    transform: rotate(180deg);
+    margin-top: 60px;
+}
+.overlay{
+    width: 0;
+    height: 0;
+    border-top: 500px solid white;
+    border-right: 500px solid transparent;
+    border-left: 500px solid white;
+    border-bottom: 500px solid white ;
+
+}
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.courses{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    
+}
+.course h1{
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    letter-spacing: normal;
+}
+.row .col h2{
+    font-size: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.course  p{
+    color: rgb(235, 12, 12);
+    font-size: 14px;
+    font-family: 300;
+    line-height: 20px;   
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+#mack{
+    margin: 0px;
+    height: 400px;
+    width: 30vw;
+}
+#sardines{
+    height: 400px;
+    width: 30vw;
+}
+#oysters{
+    height: 400px;
+    width: 30vw;
+}
+#catfish{
+    height: 400px;
+    width: 30vw;
+}
+#wild{
+    height: 400px;
+    width: 30vw;
+}
+#mussels{
+    height: 400px;
+    width: 30vw;
+}
+.col{
+    flex-basis: 30%;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 1s;
+}
+.price{
+    width: 66%;
+    height: 20vh;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.row2{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+.col2 h1{
+    padding: 10px 35px;
+    background: black;
+    color: white;
+    border-radius: 15px;
+    transition: 1s;
+}
+.col2 :hover{
+    color: black;
+    background: #8ecddd;
+}
+@media (max-width: 700px) { .row{
+    flex-direction: column;
+}}
+
+
+

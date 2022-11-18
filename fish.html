@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Fish Place</title>
+    <link rel="stylesheet" href="fish.css">
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                 <img src="./logo.jpg">
+                 <p>The Fish Place</p>
+            </div>
+            <div class="link">
+                <ul>
+                    <li><a href="fish.html">HOME</a></li>
+                    <li><a href="">PRODUCTS</a></li>
+                    <li><a href="cart.html">CART</a></li>
+                    <li><a href="">LOGIN</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="./logo.jpg" class="mobile">
+            <div id="circle">
+
+                <div class=" fea one">
+                    <div><h1>TYPE</h1>
+                        <p>A variety of fish products</p></div></div>
+
+                <div class="fea two">
+                    <div><h1>SIZE</h1>
+                        <p>Fish as large as 20cm</p></div></div>
+
+                <div class="fea three">
+                    <div><h1>WEIGHT</h1>
+                        <p>Products are weighed to determine price</p></div></div>
+                
+                    
+            </div>
+        </div>
+        <div class="controls">
+            <img src="arrow.png" id="up">
+          <h2>Factors to consider</h2>
+            <img src="arrow.png" id="down">
+        </div>
+       
+    </div>
+    <section class="course">
+        <h1>SOME OF OUR PRODUCTS</h1>
+    
+        <div class="row">
+            <div class="col">
+              <h2>ATLANTIC MACKEREL</h2>
+              <img src="./atlantic-mackerel.jpg" id="mack">
+              <button data-id="1" data-price="3000" data-title="Atlantic mackerel" >ADD TO CART</button>
+            
+            </div>
+            <div class="col">
+                <h2>SARDINES</h2>
+                <img src="./sardines.jpg" id="sardines">
+                <button data-id="2" data-price="500" data-title="Sardines" >ADD TO CART</button>
+                
+              </div>
+              <div class="col">
+                <h2>OYSTERS</h2>
+                <img src="./oysters.jpg" id="oysters">
+                <button data-id="3" data-price="700" data-title="Oysters" >ADD TO CART</button>
+                
+              </div>
+          </div>
+    </section>
+    <section class="price">
+        <div class="row2">
+            <div class="col2"><h1>N3000</h1></div>
+            <div class="col2"><h1>N500</h1></div>
+            <div class="col2"><h1>N700</h1></div>
+        </div>
+    </section>
+
+
+    <section class="courses">
+       
+        <div class="row">
+            <div class="col">
+              <h2>CATFISH</h2>
+              <img src="./catfish.jpg" id="catfish">
+              <button data-id="4" data-price="4000" data-title="Catfish" >ADD TO CART</button>
+            
+            </div>
+            <div class="col">
+                <h2>WILD SALMON</h2>
+                <img src="./wild salmon.jpg" id="wild">
+                <button data-id="5" data-price="1000" data-title="Wild salmon" >ADD TO CART</button>
+                
+              </div>
+              <div class="col">
+                <h2>MUSSELS</h2>
+                <img src="./mussels.jpg" id="mussels">
+                <button data-id="6" data-price="300" data-title="Mussels" >ADD TO CART</button>
+
+                
+              </div>
+          </div>
+    </section>
+    <section class="price">
+        <div class="row2">
+            <div class="col2"><h1>N4000</h1></div>
+            <div class="col2"><h1>N1000</h1></div>
+            <div class="col2"><h1>N300</h1></div>
+        </div>
+    </section>
+
+    <script>
+        var circle = document.getElementById("circle");
+        var up = document.getElementById("up");
+        var down = document.getElementById("down");
+
+        var rotatevalue = circle.style.transform;
+        var rotatesum;
+
+        up.onclick=function(){
+            rotatesum=rotatevalue+"rotate(-90deg)";
+            circle.style.transform = rotatesum;
+            rotatevalue=rotatesum;
+        }
+        down.onclick=function(){
+            rotatesum=rotatevalue+"rotate(90deg)";
+            circle.style.transform = rotatesum;
+            rotatevalue=rotatesum;
+        }
+    </script>
+<script src="script.js"></script>
+
+</body>
+</html>
